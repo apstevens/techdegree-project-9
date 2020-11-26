@@ -1,19 +1,7 @@
-const divConatiner = document.getElementById("loader");
+function overlay() {
+    const overlay = document.getElementById('overlay');
 
-$(window).load(function() {
-    $(".loader").fadeIn("slow");
-    setTimeout(removeLoader, 2000);
-
-    html = `
-        <div>
-            <h1>Welcome to Andy's world!</h1>
-        </div>
-    `
-});
-
-divConatiner.innerHTML = html;
-
-function removeLoader() {
-    $(".loader").fadeOut("slow");
+    overlay.style.display = 'none';
 }
 
+setTimeout(overlay, 2000);
