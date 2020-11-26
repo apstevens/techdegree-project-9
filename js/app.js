@@ -4,4 +4,4 @@ function overlay() {
     overlay.style.display = 'none';
 }
 
-setTimeout(overlay, 2000);
+setTimeout(overlay, 6000);

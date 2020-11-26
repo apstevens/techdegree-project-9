@@ -1,3 +1,10 @@
+body {
+    background-image: url(../img/technology.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .site-header {
     margin-top: 10px;
     border-radius: 5px;
@@ -5,13 +12,35 @@
 
 .site-header a {
     color: white;
+    text-decoration: none;
 }
+
+.site-header a:hover {
+    border: 1px solid yellowgreen;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
 
 .jumbotron{
     border-radius: 5px;
     background-image: url(../img/2705EC-Chelmsford-City-Photo-3_FORIYA.jpg);
     background-size: cover;
     opacity: 0.6;
+}
+
+.jumbotron h1,
+.jumbotron p,
+.jumbotron button {
+    opacity: none;
+}
+
+.profile {
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+
 }
 
 .border-dark {
@@ -24,26 +53,29 @@
     border-bottom: 1px dotted #000;
 }
 
-#id {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    cursor: pointer;
+.hobbies {
+    transition: ease-in-out 0.5s;
 }
 
-#text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.hobbies:hover {
+    border: 1px solid #000;
+    background: yellowgreen;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+#overlay {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: 1;
 }
