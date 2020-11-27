@@ -1,5 +1,14 @@
 body {
-    background-image: url(../img/techno-image.jpg);
+    font-family: 'Amatic SC', cursive;
+    background: url(../img/technology.jpg) no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-size: 1.5em;
+}
+.welcome {
+    font-size: 50px;
 }
 
 .site-header {
@@ -8,15 +17,21 @@ body {
 }
 
 .site-header a {
+    font-size: 1.5em;
     color: white;
     text-decoration: none;
     transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
+    z-index: 1;
 }
 
 .site-header a:hover {
     border: 1px solid yellowgreen;
     border-radius: 5px;
     padding: 5px;
+}
+
+.list-group a{
+    font-size: 1.5em;
 }
 
 .btn-outline-info {
@@ -42,6 +57,52 @@ body {
     border: 1px solid yellowgreen;
     background: #001528;
     color: #fff;
+}
+
+.btn-outline-secondary {
+    border: 1px solid yellowgreen;
+    color: #fff;
+    transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
+}
+
+.btn-outline-secondary:hover {
+    border: 1px solid yellowgreen;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.dropdown-menu {
+    border: 1px solid yellowgreen;
+    background: #001528;
+}
+
+.card {
+    border: 2px solid yellowgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    color: #000;
+}
+
+.card-img {
+    padding:  5px;
+    width: 140px;
+    height: 140px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
+}
+
+.dropdown-menu a:hover {
+    background: yellowgreen;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transform: scale(1.1);
 }
 
 .profile {
@@ -91,16 +152,25 @@ body {
 #overlay {
     background: #001528;
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .overlay-container {
     text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../img/technology.jpg) no-repeat;
+    background-size: cover;
 }
 
