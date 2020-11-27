@@ -7,16 +7,17 @@ function overlay() {
 setTimeout(overlay, 6000);
 
 let i = 0;
-let text = 'Predict the future by to creating it!';
+let text = 'Predict the future by creating it!';
 let speed = 50;
 
-
-window.onload = function slideShow() {
+function slideShow() {
   if (i < text.length) {
     document.getElementById('quote').innerHTML += text.charAt(i);
     i++;
-    setTimeout( slideShow, speed );
+    setTimeout(slideShow, speed);
   }
+}
 
-
+window.onload = function() {
+  setTimeout(slideShow, 6500);
 }

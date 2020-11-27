@@ -41,7 +41,7 @@ p {
 }
 
 .btn-primary {
-    background: #001528;
+    background: none;
     border: 1px solid yellowgreen;
     transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
 }
@@ -73,28 +73,37 @@ p {
 
 .dropdown-menu {
     border: 1px solid yellowgreen;
-    background: #001528;
+    background: none;
 }
 
 .card {
+    background: none;
     border: 2px solid yellowgreen;
     display: flex;
     flex-direction: column;
 }
 
 .card-body {
-    color: #000;
+    color: #fff;
 }
 
-.card-img {
+.card-img-top {
     padding:  5px;
     width: 140px;
     height: 140px;
 }
 
+.skills {
+    margin: 20px;
+}
+
 .dropdown-menu a {
     color: #fff;
     transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
+}
+
+.dropdown-menu:hover {
+    background: #001528;
 }
 
 .dropdown-menu a:hover {
