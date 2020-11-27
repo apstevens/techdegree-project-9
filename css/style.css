@@ -1,8 +1,5 @@
 body {
-    background-image: url(../img/technology.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../img/techno-image.jpg);
 }
 
 .site-header {
@@ -13,6 +10,7 @@ body {
 .site-header a {
     color: white;
     text-decoration: none;
+    transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
 }
 
 .site-header a:hover {
@@ -21,7 +19,36 @@ body {
     padding: 5px;
 }
 
+.btn-outline-info {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
+}
 
+.btn-primary {
+    background: #001528;
+    border: 1px solid yellowgreen;
+    transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
+}
+
+.btn-primary:hover {
+    background: #001528;
+    border: 1px solid yellowgreen;
+    transform: scale(1.1);
+}
+
+.btn-outline-info:hover {
+    transform: scale(1.1);
+    border: 1px solid yellowgreen;
+    background: #001528;
+    color: #fff;
+}
+
+.profile {
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+}
 
 .jumbotron{
     border-radius: 5px;
@@ -36,13 +63,6 @@ body {
     opacity: none;
 }
 
-.profile {
-    width: 400px;
-    height: 240px;
-    object-fit: cover;
-
-}
-
 .border-dark {
     border-radius: 5px;
 }
@@ -54,7 +74,7 @@ body {
 }
 
 .hobbies {
-    transition: ease-in-out 0.5s;
+    transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
 }
 
 .hobbies:hover {
@@ -64,18 +84,20 @@ body {
     transform: scale(1.1);
 }
 
+#home {
+    background: #001528;
+}
+
 #overlay {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: center;
+    position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    border-radius: 5px;
+    bottom: 0;
     z-index: 1;
 }
+
+.overlay-container {
+    text-align: center;
+}
+
