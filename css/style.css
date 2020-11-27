@@ -2,11 +2,27 @@ body {
     font-family: 'Amatic SC', cursive;
     background: url(../img/technology.jpg) no-repeat;
     background-size: cover;
+    background-position: 50% 75%;
 }
 
 p {
     font-size: 1.5em;
 }
+
+.hyperlink {
+    /* margin-bottom: 20px; */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: right;
+}
+
+.address {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .welcome {
     font-size: 50px;
 }
