@@ -14,17 +14,32 @@ p {
     font-size: 1.5em;
 }
 
+.listgroup-goals {
+    clear: both;
+    border: 1px solid yellowgreen;
+    border-radius: 5px;
+}
 
 .hyperlink {
-    /* margin-bottom: 20px; */
     width: 35px;
     height: 35px;
     border-radius: 50%;
     float: right;
 }
 
+.hyperlink-goals li {
+    margin-bottom: 24px;
+}
+
+.hyperlink-goals {
+    width: 35px;
+    height: 35px;
+    border: 1px solid yellowgreen;
+    border-radius: 5px;
+    float: right;
+}
+
 .hyperlink-project {
-    /* margin-bottom: 20px; */
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -57,6 +72,11 @@ p {
     border: 1px solid yellowgreen;
     border-radius: 5px;
     padding: 5px;
+}
+
+.list-goals {
+    border: 1px solid yellowgreen;
+    border-radius: 5px;
 }
 
 .list-group a{
@@ -170,20 +190,21 @@ p {
     opacity: 0.6;
 }
 
-.jumbotron h1,
-.jumbotron p,
-.jumbotron button {
-    opacity: none;
-}
-
 .border-dark {
     border-radius: 5px;
 }
 
+.goals {
+    color: #fff;
+    font-size: 1.5em;
+    background: none;
+}
+
 .goals:nth-child(even) {
     background-color: #d3d3d3;
-    border-top: 1px dotted #000;
-    border-bottom: 1px dotted #000;
+    color: #000;
+    border-top: 1px solid yellowgreen;
+    border-bottom: 1px solid yellowgreen;
 }
 
 .hobbies {
