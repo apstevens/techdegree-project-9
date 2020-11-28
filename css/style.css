@@ -5,9 +5,15 @@ body {
     background-position: 50% 75%;
 }
 
+li {
+    list-style-type: none;
+
+}
+
 p {
     font-size: 1.5em;
 }
+
 
 .hyperlink {
     /* margin-bottom: 20px; */
@@ -15,6 +21,13 @@ p {
     height: 35px;
     border-radius: 50%;
     float: right;
+}
+
+.hyperlink-project {
+    /* margin-bottom: 20px; */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 .address {
@@ -68,6 +81,19 @@ p {
     transform: scale(1.1);
 }
 
+.btn-light {
+    border: 1px solid yellowgreen;
+    transition: cubic-bezier(.07,.69,.94,.58) 0.5s;
+}
+
+.btn-light:hover {
+    background: #001528;
+    color: #fff;
+    border: 1px solid yellowgreen;
+    transform: scale(1.1);
+}
+
+
 .btn-outline-info:hover {
     transform: scale(1.1);
     border: 1px solid yellowgreen;
@@ -95,6 +121,7 @@ p {
 .card {
     background: none;
     border: 2px solid yellowgreen;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -199,3 +226,23 @@ p {
     background-size: cover;
 }
 
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+a.linkedin {
+  background-image: url(../img/linkedin.svg);
+}
+a.github {
+  background-image: url(../img/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
